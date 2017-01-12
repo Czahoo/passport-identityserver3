@@ -106,7 +106,7 @@ Strategy.prototype.endSession = function(req, res) {
         this.config.onEndSession(req, res);
     }
 
-    res.redirect(endSessionUrl);
+    res.url = endSessionUrl;
 };
 
 // 3.1.3.7.  ID Token Validation [http://openid.net/specs/openid-connect-core-1_0.html#IDTokenValidation]
